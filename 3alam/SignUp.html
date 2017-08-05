@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body id="body">
+
+    <div class="container-fluid" id="Guardian">
+        <h id="GuardianLabel">Guardian Information</h>
+        <div class="form-group">
+      <input type="name" class="form-control" id="TextField" placeholder="Enter your name">
+    </div>
+     <div class="form-group">
+      <input type="mail" class="form-control" id="TextField" placeholder="Enter your e-mail">
+    </div>
+     <div class="form-group">
+      <input type="no." class="form-control" id="TextField" placeholder="Enter your phone number">
+    </div>
+     <div class="form-group">
+      <input type="name" class="form-control" id="TextField" placeholder="Enter your address">
+    </div>
+    <br>
+    <h id="GuardianLabel">Upload a copy of your national ID</h>
+    <input type="file" hidden>
+    <br>
+    <h id="GuardianLabel">Upload a copy of an electricity receipt</h>
+    <input type="file" hidden>
+    </div>
+<div class="container-fluid" id="Personal">
+            <h id="GuardianLabel">Personal Information</h>
+            <div class="form-group">
+      <input type="name" class="form-control" id="TextField" placeholder="Enter your name">
+    </div>
+     <div class="form-group">
+      <input type="password" class="form-control" id="TextField" placeholder="Enter your password">
+    </div>
+    </div>
+
+    <div class = "container-fluid text-center">
+        <form action="MainScreen.html">
+        <button type="submit" id="Submit" class="btn btn-default">Submit </button>
+        </form>
+        </div>
+
+   
+        
+</body>
+<style>
+
+    #Submit{
+        background-color: transparent;
+        color: white;
+        border-radius: 0;
+        border-color: white;
+        width: 150px;
+        height: 60px;
+
+    }
+
+    #Personal{
+        vertical-align: top;
+        width: 500px;
+        height: 300px;
+        display: inline-block;
+        margin-top: 20px;
+        margin-left: 100px;
+    }
+   
+    #body{
+        background-color: #35D4ED;
+    }
+    #Guardian{
+        width:500px;
+        height:400px;
+        margin-left: 20px;
+        margin-top: 20px;
+        display: inline-block;
+    }
+    #GuardianLabel{
+        color:white;
+        font-size: 20px;
+    }
+    #TextField{
+        color: white;
+        border-radius: 0;
+        border-color: white;
+        background-color: transparent;
+        margin-top: 10px;
+    }
+    input::-webkit-input-placeholder {
+color:white!important;  
+}
+ 
+input:-moz-placeholder { /* Firefox 18- */
+color:white!important;  
+}
+ 
+input::-moz-placeholder {  /* Firefox 19+ */
+color:white!important;  
+}
+ 
+input:-ms-input-placeholder {  
+color:white!important;  
+}
+    
+
+ </style>
+</html>
